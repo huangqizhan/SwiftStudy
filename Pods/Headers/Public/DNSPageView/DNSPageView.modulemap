@@ -1,0 +1,6 @@
+module DNSPageView {
+  umbrella header "DNSPageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

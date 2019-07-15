@@ -1,0 +1,81 @@
+PODS:
+  - Alamofire (4.8.2)
+  - DNSPageView (1.0.4)
+  - ESTabBarController-swift (2.6.5)
+  - FSPagerView (0.8.2)
+  - HandyJSON (5.0.0)
+  - JXMarqueeView (0.0.8)
+  - Kingfisher (4.10.1)
+  - LTScrollView (0.2.1)
+  - MJRefresh (3.2.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - SnapKit (4.2.0)
+  - StreamingKit (0.1.30)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DNSPageView (~> 1.0.1)
+  - ESTabBarController-swift (~> 2.6.2)
+  - FSPagerView
+  - HandyJSON
+  - JXMarqueeView
+  - Kingfisher
+  - LTScrollView (~> 0.2.0)
+  - MJRefresh
+  - Moya
+  - SnapKit
+  - StreamingKit
+  - SVProgressHUD
+  - SwiftMessages (~> 6.0.2)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DNSPageView
+    - ESTabBarController-swift
+    - FSPagerView
+    - HandyJSON
+    - JXMarqueeView
+    - Kingfisher
+    - LTScrollView
+    - MJRefresh
+    - Moya
+    - Result
+    - SnapKit
+    - StreamingKit
+    - SVProgressHUD
+    - SwiftMessages
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  DNSPageView: 28b2b5a9fb65cdc222d45dc2ce6247cd3f9365b5
+  ESTabBarController-swift: f31cd3e30bde23619d3b300266f27864d96ffb58
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  JXMarqueeView: dfb4eadb1bf7245c9b41706e907c889fbf53c2dc
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 4772f3f07235ce5a00a1f29414d42a22a0298082
+
+COCOAPODS: 1.5.2
