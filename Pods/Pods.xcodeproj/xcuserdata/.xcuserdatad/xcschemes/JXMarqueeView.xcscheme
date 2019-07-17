@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3825ABA3898BF5AE3229534AA0B0E96A"
+               BlueprintIdentifier = "BED3770C03EDAAC404FE03E33AEBF881"
                BlueprintName = "JXMarqueeView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libJXMarqueeView.a">
+               BuildableName = "JXMarqueeView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

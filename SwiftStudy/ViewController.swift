@@ -12,11 +12,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.action()
+        
     }
-    
-//    func action?() {
-//    }
-    
 }
 

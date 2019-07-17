@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        let tabbarVC = self.setupTableBarStyle(delegate: self as? UITabBarControllerDelegate)
+        self.window?.rootViewController = tabbarVC
+        self.window?.makeKeyAndVisible()
         return true
     }
-
-    
     func setupTableBarStyle(delegate:UITabBarControllerDelegate?) -> ESTabBarController {
         let tabbarController = ESTabBarController()
         tabbarController.delegate = delegate;
@@ -59,10 +59,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let find = HFindViewController()
         let mine = HMineViewController()
         
-//        home.tabBarItem = ESTabBarItem.
+        home.tabBarItem = ESTabBarItem.init(HIrregularityBasicContentView.init(), title: "首页", image: UIImage.init(named: "home"), selectedImage:  UIImage(named: "home_1"))
         
+        listen.tabBarItem = ESTabBarItem.init(HIrregularityBasicContentView.init(), title: "我听", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
+        play.tabBarItem = ESTabBarItem.init(HIrregularityContentView(), title: nil, image: UIImage(named: "tab_play"), selectedImage: UIImage(named: "tab_play"))
         
+        find.tabBarItem = ESTabBarItem.init(HIrregularityBasicContentView.init(), title: "发现", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
         
+        mine.tabBarItem = ESTabBarItem.init(HIrregularityBasicContentView.init(), title: "我的", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
+        let homeNav = HBaseNavigationViewController.init(rootViewController: home)
+        let listeNav = HBaseNavigationViewController.init(rootViewController: listen)
+        let playNav = HBaseNavigationViewController.init(rootViewController: play)
+        let findNav = HBaseNavigationViewController.init(rootViewController: find)
+        let mineNav = HBaseNavigationViewController.init(rootViewController: mine)
+        home.title = "首页"
+        listen.title = "我听"
+        play.title = "播放"
+        find.title = "发现"
+        mine.title = "我的"
+
+        tabbarController.viewControllers = [homeNav,listeNav,playNav,findNav,mineNav]
         return tabbarController
         
     }

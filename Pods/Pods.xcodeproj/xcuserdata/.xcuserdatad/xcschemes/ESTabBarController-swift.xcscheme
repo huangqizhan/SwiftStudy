@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4E1C84262B35F66C45834D82C164C21"
+               BlueprintIdentifier = "FBCF60BF7DF4E9F38B18B2E7CBE87D33"
                BlueprintName = "ESTabBarController-swift"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libESTabBarController-swift.a">
+               BuildableName = "ESTabBarController-swift.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

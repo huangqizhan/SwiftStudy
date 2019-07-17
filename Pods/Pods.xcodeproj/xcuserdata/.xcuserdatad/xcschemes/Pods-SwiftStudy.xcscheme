@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78A40F4F94E9E2A59983571E30F4C48A"
+               BlueprintIdentifier = "20A5A6A51543CAFD24A799606D6195FD"
                BlueprintName = "Pods-SwiftStudy"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-SwiftStudy.a">
+               BuildableName = "Pods-SwiftStudy.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
