@@ -2,7 +2,7 @@
 //  HBaseContentView.swift
 //  SwiftStudy
 //
-//  Created by hjb_mac_mini on 2019/7/16.
+//  Created by hqz on 2019/7/16.
 //  Copyright © 2019 8km. All rights reserved.
 //
 

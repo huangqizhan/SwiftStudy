@@ -34,6 +34,9 @@
 		28A3F21022D826C8002ADD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A3F20E22D826C8002ADD8F /* Main.storyboard */; };
 		28A3F21222D826CA002ADD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A3F21122D826CA002ADD8F /* Assets.xcassets */; };
 		28A3F21522D826CA002ADD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A3F21322D826CA002ADD8F /* LaunchScreen.storyboard */; };
+		28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36922E01637000BBEE2 /* HHomeRecommondModel.swift */; };
+		28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */; };
+		28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */; };
 		28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		28A3F21122D826CA002ADD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A3F21422D826CA002ADD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A3F21622D826CA002ADD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CFF36922E01637000BBEE2 /* HHomeRecommondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommondModel.swift; sourceTree = "<group>"; };
+		28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommongViewModel.swift; sourceTree = "<group>"; };
+		28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommondApi.swift; sourceTree = "<group>"; };
 		28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseContentView.swift; sourceTree = "<group>"; };
 		779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0F037A65A9C33F6766C716 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,11 @@
 		280123FF22DF286700551B35 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				28CFF36222E01558000BBEE2 /* Api */,
+				28CFF36422E01558000BBEE2 /* Controller */,
+				28CFF36022E01557000BBEE2 /* Model */,
+				28CFF36122E01558000BBEE2 /* View */,
+				28CFF36322E01558000BBEE2 /* viewModel */,
 				2801240822DF291D00551B35 /* HHomeRecommendVC.swift */,
 			);
 			path = "推荐";
@@ -287,6 +298,44 @@
 				28A3F21622D826CA002ADD8F /* Info.plist */,
 			);
 			path = SwiftStudy;
+			sourceTree = "<group>";
+		};
+		28CFF36022E01557000BBEE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28CFF36922E01637000BBEE2 /* HHomeRecommondModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28CFF36122E01558000BBEE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28CFF36222E01558000BBEE2 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		28CFF36322E01558000BBEE2 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		28CFF36422E01558000BBEE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		28E8D15E22DDA0E900310DB8 /* views */ = {
@@ -461,14 +510,17 @@
 				2801240722DF28D000551B35 /* HHomeBrodcastVC.swift in Sources */,
 				2896E2CB22DC7D7D00D9A60F /* HFindViewController.swift in Sources */,
 				2896E2D322DC7DBC00D9A60F /* HPlayViewController.swift in Sources */,
+				28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */,
 				2801240D22DF297C00551B35 /* HHomeVIPVC.swift in Sources */,
 				2896E2CD22DC7D8E00D9A60F /* HHomeViewController.swift in Sources */,
 				280123F822DF021E00551B35 /* WRProxy.swift in Sources */,
+				28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */,
 				28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */,
 				28A3F20D22D826C8002ADD8F /* ViewController.swift in Sources */,
 				28A3F20B22D826C8002ADD8F /* AppDelegate.swift in Sources */,
 				280123F522DF021E00551B35 /* URefresh.swift in Sources */,
 				280123F922DF021E00551B35 /* WRCycleScrollView.swift in Sources */,
+				28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */,
 				280123E422DEFD4200551B35 /* HBaseNavigationViewController.swift in Sources */,
 				2801240B22DF295200551B35 /* HHomeLiveVC.swift in Sources */,
 				280123FD22DF0B5000551B35 /* HHeader.swift in Sources */,

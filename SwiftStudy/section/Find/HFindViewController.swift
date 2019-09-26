@@ -2,7 +2,7 @@
 //  HFindViewController.swift
 //  SwiftStudy
 //
-//  Created by hjb_mac_mini on 2019/7/15.
+//  Created by hqz on 2019/7/15.
 //  Copyright © 2019 8km. All rights reserved.
 //
 
