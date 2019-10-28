@@ -110,9 +110,46 @@ extension HHomeRecommondViewModel{
     }
     
     ///  item 尺寸
-//    func sizeForItemAt(indexPath : IndexPath) -> CGSize {
-//        let headerAndFooterHeight : Int = 90;
-//    }
+    func sizeForItemAt(indexPath : IndexPath) -> CGSize {
+        let headerAndFooterHeight : Int = 90;
+        let itemNums = (self.homeRecommendList?[indexPath.section].list?.count)!/3;
+        let count = self.homeRecommendList?[indexPath.section].list?.count;
+        let modualType = self.homeRecommendList?[indexPath.section].moduleType;
+        if modualType == "focus"{
+            return CGSize(width: HScreenWidth, height: 360)
+        }else if modualType == "square" || modualType == "topBuzz"{
+            return CGSize(width: 0, height: 0);
+        }else if modualType == "guessYouLike" || modualType == "paidCategory" || modualType == "categoriesForLong" || modualType == "cityCategory" || modualType == "live"{
+            return CGSize(width: HScreenWidth, height: CGFloat(headerAndFooterHeight + 180*itemNums))
+        }else if modualType == "categoriesForShort" || modualType == "playlist" || modualType == "categoriesForExplore"{
+            return CGSize(width: HScreenWidth, height: CGFloat(headerAndFooterHeight + 120*count!))
+        }else if modualType == "ad"{
+            return CGSize(width: HScreenWidth, height: 240)
+        }else if modualType == "oneKeyListen"{
+            return CGSize(width: HScreenWidth, height: 180);
+        }else{
+            return CGSize.zero
+        }
+    }
+    /// 分区头视图
+    func referenceSizeForHeaderInSection(section:Int) -> CGSize {
+        let moduleType = self.homeRecommendList?[section].moduleType
+        if moduleType == "focus" || moduleType == "square" || moduleType == "topBuzz" || moduleType == "ad" || section == 18 {
+            return .zero
+        }else{
+            return CGSize(width: HScreenWidth, height: 40);
+        }
+    }
+    
+    /// 分区尾视图
+    func referenceSizeForFooterInSection(section : Int) -> CGSize {
+        let moduleType = self.homeRecommendList?[section].moduleType
+        if moduleType == "focus" || moduleType == "square" {
+            return CGSize.zero
+        }else {
+            return CGSize.init(width: HScreenWidth, height: 10.0)
+        }
+    }
 }
 
 
