@@ -38,6 +38,9 @@
 		28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */; };
 		28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */; };
 		28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */; };
+		BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */; };
+		BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */; };
+		BA6733C723687755008163EA /* HWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6733C623687755008163EA /* HWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommondApi.swift; sourceTree = "<group>"; };
 		28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseContentView.swift; sourceTree = "<group>"; };
 		779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessYouLikeViewController.swift; sourceTree = "<group>"; };
+		BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA6733C623687755008163EA /* HWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWebViewController.swift; sourceTree = "<group>"; };
 		EB0F037A65A9C33F6766C716 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		FE5D4E7158F169C828190336 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,10 +162,10 @@
 		280123FF22DF286700551B35 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				BA6733C423687747008163EA /* viewcontroller */,
+				BA6733C523687748008163EA /* views */,
 				28CFF36222E01558000BBEE2 /* Api */,
-				28CFF36422E01558000BBEE2 /* Controller */,
 				28CFF36022E01557000BBEE2 /* Model */,
-				28CFF36122E01558000BBEE2 /* View */,
 				28CFF36322E01558000BBEE2 /* viewModel */,
 				2801240822DF291D00551B35 /* HHomeRecommendVC.swift */,
 			);
@@ -308,13 +314,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		28CFF36122E01558000BBEE2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		28CFF36222E01558000BBEE2 /* Api */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,13 +328,6 @@
 				28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */,
 			);
 			path = viewModel;
-			sourceTree = "<group>";
-		};
-		28CFF36422E01558000BBEE2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		28E8D15E22DDA0E900310DB8 /* views */ = {
@@ -361,6 +353,31 @@
 				779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA174F3723687C9B00607A8D /* guessyoulike */ = {
+			isa = PBXGroup;
+			children = (
+				BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */,
+			);
+			path = guessyoulike;
+			sourceTree = "<group>";
+		};
+		BA6733C423687747008163EA /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BA6733C623687755008163EA /* HWebViewController.swift */,
+				BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BA6733C523687748008163EA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BA174F3723687C9B00607A8D /* guessyoulike */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */,
 				2801240522DF28B200551B35 /* HHomeClassifyVC.swift in Sources */,
 				2801240722DF28D000551B35 /* HHomeBrodcastVC.swift in Sources */,
 				2896E2CB22DC7D7D00D9A60F /* HFindViewController.swift in Sources */,
@@ -518,6 +536,7 @@
 				28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */,
 				28A3F20D22D826C8002ADD8F /* ViewController.swift in Sources */,
 				28A3F20B22D826C8002ADD8F /* AppDelegate.swift in Sources */,
+				BA6733C723687755008163EA /* HWebViewController.swift in Sources */,
 				280123F522DF021E00551B35 /* URefresh.swift in Sources */,
 				280123F922DF021E00551B35 /* WRCycleScrollView.swift in Sources */,
 				28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */,
@@ -529,6 +548,7 @@
 				280123F622DF021E00551B35 /* WRNavigationBar.swift in Sources */,
 				280123FA22DF021E00551B35 /* WRCycleCell.swift in Sources */,
 				280123F322DF021E00551B35 /* ReplicatorLayer.swift in Sources */,
+				BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */,
 				2896E2C922DC7D5E00D9A60F /* HBaseViewController.swift in Sources */,
 				2801240922DF291D00551B35 /* HHomeRecommendVC.swift in Sources */,
 				280123F722DF021E00551B35 /* WRCustomNavigationBar.swift in Sources */,
