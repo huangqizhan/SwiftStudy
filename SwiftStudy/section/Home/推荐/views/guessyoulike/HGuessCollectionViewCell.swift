@@ -10,59 +10,69 @@ import UIKit
 
 class HGuessCollectionViewCell: UICollectionViewCell {
     
-    // 图片
-    private var picView : UIImageView = {
-       let imageView = UIImageView.init()
-        return imageView
+    /// 图片
+    private var imageView : UIImageView = {
+        let imgV = UIImageView.init()
+        return imgV;
     }()
-    
     /// 标题
     private var titleLb : UILabel = {
-        let titLb : UILabel = UILabel()
-        titLb.font = UIFont.systemFont(ofSize: 17)
-        return titLb
-    }()
-    /// 是否完结
-    private var paidLab : UILabel = {
-        let plab = UILabel()
-        plab.font = UIFont.systemFont(ofSize: 13)
-        plab.textColor = UIColor.white
-        plab.backgroundColor = UIColor(red: 248, green: 210, blue: 74, alpha: 1)
-        plab.layer.masksToBounds = true
-        plab.layer.cornerRadius = 3.0
-        plab.textAlignment = NSTextAlignment.center
-        return plab
+        let lb = UILabel.init()
+        lb.font = UIFont.systemFont(ofSize: 16)
+        return lb;
     }()
     
-    // 子标题
+    /// 子标题
     private var subTitleLb : UILabel = {
-        let sublb = UILabel()
-        sublb.font = UIFont.systemFont(ofSize: 15)
-        sublb.textColor = UIColor.gray
-        return sublb
+       let lb = UILabel.init()
+        lb.font = UIFont.systemFont(ofSize: 14)
+        return lb
     }()
     
-    /// 播放j数量
-    private var bolable : UILabel = {
-        let blb = UILabel()
-        blb.font = UIFont.systemFont(ofSize: 14)
-        blb.textColor = UIColor.gray
-        return blb;
-    }()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupSubViews()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    func setupSubViews()  {
+        self.addSubview(self.imageView)
+        self.imageView.snp.makeConstraints { (make) in
+            make.left.top.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-60)
+        }
+        
+        self.addSubview(self.titleLb)
+        self.titleLb.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(self.imageView.snp.bottom)
+            make.height.equalTo(20)
+        }
+        
+        self.addSubview(self.subTitleLb);
+        self.subTitleLb.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(self.titleLb.snp.bottom)
+            make.height.equalTo(40)
+            make.bottom.equalToSuperview()
+        }
+        
+    }
     
-    /// 集数
-    private var tracksLabel : UILabel = {
-        let trlb = UILabel()
-        trlb.font = UIFont.systemFont(ofSize: 14)
-        trlb.textColor = UIColor.gray
-        return trlb
-    }()
-    
-    
-    public var guessModel : HGuessYouLikeModel?{
+    var recommandListModel : HRecommendListModel?{
         didSet{
-            
+            guard let model = recommandListModel else {
+                return
+            }
+            if model.pic != nil {
+                self.imageView.kf.setImage(with: URL(string: model.pic!))
+            }
+            self.titleLb.text = model.title
+            self.subTitleLb.text = model.subtitle
         }
     }
+    
+    
     
 }

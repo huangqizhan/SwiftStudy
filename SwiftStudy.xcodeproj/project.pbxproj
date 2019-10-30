@@ -40,6 +40,7 @@
 		28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */; };
 		BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */; };
 		BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */; };
+		BA174F3B2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3A2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift */; };
 		BA6733C723687755008163EA /* HWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6733C623687755008163EA /* HWebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessYouLikeViewController.swift; sourceTree = "<group>"; };
 		BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA174F3A2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomGuessLikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA6733C623687755008163EA /* HWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWebViewController.swift; sourceTree = "<group>"; };
 		EB0F037A65A9C33F6766C716 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		FE5D4E7158F169C828190336 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */,
+				BA174F3A2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift */,
 			);
 			path = guessyoulike;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				2896E2CB22DC7D7D00D9A60F /* HFindViewController.swift in Sources */,
 				2896E2D322DC7DBC00D9A60F /* HPlayViewController.swift in Sources */,
 				28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */,
+				BA174F3B2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift in Sources */,
 				2801240D22DF297C00551B35 /* HHomeVIPVC.swift in Sources */,
 				2896E2CD22DC7D8E00D9A60F /* HHomeViewController.swift in Sources */,
 				280123F822DF021E00551B35 /* WRProxy.swift in Sources */,
