@@ -22,7 +22,7 @@ class HGuessYouLikeViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.white
         collectionView.alwaysBounceVertical = true
-        collectionView.register(HGuessCollectionViewCell.self, forCellWithReuseIdentifier: "HGuessCollectionViewCellId")
+        collectionView.register(HRecomGuessLikeCollectionViewCell.self, forCellWithReuseIdentifier: "HRecomGuessLikeCollectionViewCellId")
         return collectionView
     }()
     override func viewDidLoad() {
@@ -55,7 +55,7 @@ extension HGuessYouLikeViewController : UICollectionViewDelegate , UICollectionV
         return self.guessYouLike?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : HGuessCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HGuessCollectionViewCellId", for: indexPath) as! HGuessCollectionViewCell
+        let cell : HRecomGuessLikeCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HRecomGuessLikeCollectionViewCellId", for: indexPath) as! HRecomGuessLikeCollectionViewCell
         cell.guessModel = self.guessYouLike?[indexPath.row]
         return cell
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 class HGuessCollectionViewCell: UICollectionViewCell {
-    
+     
     /// 图片
     private var imageView : UIImageView = {
         let imgV = UIImageView.init()
