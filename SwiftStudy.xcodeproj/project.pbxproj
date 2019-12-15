@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		16A8B0B75E96238071462A58 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */; };
 		280123E422DEFD4200551B35 /* HBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280123E322DEFD4200551B35 /* HBaseNavigationViewController.swift */; };
-		280123F322DF021E00551B35 /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280123E722DF021E00551B35 /* ReplicatorLayer.swift */; };
 		280123F422DF021E00551B35 /* LBFMCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280123E922DF021E00551B35 /* LBFMCustomLabel.swift */; };
 		280123F522DF021E00551B35 /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280123EB22DF021E00551B35 /* URefresh.swift */; };
 		280123F622DF021E00551B35 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280123ED22DF021E00551B35 /* WRNavigationBar.swift */; };
@@ -37,6 +36,20 @@
 		28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36922E01637000BBEE2 /* HHomeRecommondModel.swift */; };
 		28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */; };
 		28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */; };
+		28DD1C6023A609B20053341F /* HomeRecomLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C5F23A609B20053341F /* HomeRecomLiveCell.swift */; };
+		28DD1C6223A60CF10053341F /* RecommandLiveChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6123A60CF10053341F /* RecommandLiveChildCell.swift */; };
+		28DD1C6423A61B1E0053341F /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6323A61B1E0053341F /* ReplicatorLayer.swift */; };
+		28DD1C6723A624A50053341F /* HRecomdForYouCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6623A624A50053341F /* HRecomdForYouCell.swift */; };
+		28DD1C6923A624C40053341F /* HRecomdForYouChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6823A624C40053341F /* HRecomdForYouChildCell.swift */; };
+		28DD1C6C23A6259D0053341F /* HLaztAdviserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6B23A6259D0053341F /* HLaztAdviserCell.swift */; };
+		28DD1C6E23A625B30053341F /* HLaztAdviserChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C6D23A625B30053341F /* HLaztAdviserChildCell.swift */; };
+		28DD1C7123A6268F0053341F /* HAdviserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7023A6268F0053341F /* HAdviserCell.swift */; };
+		28DD1C7423A626F30053341F /* HHotAudioBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7323A626F30053341F /* HHotAudioBookCell.swift */; };
+		28DD1C7623A627070053341F /* HHotAudioBookChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7523A627070053341F /* HHotAudioBookChildCell.swift */; };
+		28DD1C7B23A6292E0053341F /* HSquardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7A23A6292E0053341F /* HSquardCell.swift */; };
+		28DD1C7D23A629B70053341F /* HRecomdFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7C23A629B70053341F /* HRecomdFooterView.swift */; };
+		28DD1C7F23A629D20053341F /* HRecomdHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7E23A629D20053341F /* HRecomdHeaderView.swift */; };
+		28DD1C8123A62AC50053341F /* HRecomdHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C8023A62AC50053341F /* HRecomdHeaderCell.swift */; };
 		28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */; };
 		BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */; };
 		BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */; };
@@ -47,7 +60,6 @@
 
 /* Begin PBXFileReference section */
 		280123E322DEFD4200551B35 /* HBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseNavigationViewController.swift; sourceTree = "<group>"; };
-		280123E722DF021E00551B35 /* ReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
 		280123E922DF021E00551B35 /* LBFMCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBFMCustomLabel.swift; sourceTree = "<group>"; };
 		280123EB22DF021E00551B35 /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
 		280123ED22DF021E00551B35 /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
@@ -77,6 +89,20 @@
 		28CFF36922E01637000BBEE2 /* HHomeRecommondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommondModel.swift; sourceTree = "<group>"; };
 		28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommongViewModel.swift; sourceTree = "<group>"; };
 		28CFF36D22E03DAE000BBEE2 /* HHomeRecommondApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeRecommondApi.swift; sourceTree = "<group>"; };
+		28DD1C5F23A609B20053341F /* HomeRecomLiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecomLiveCell.swift; sourceTree = "<group>"; };
+		28DD1C6123A60CF10053341F /* RecommandLiveChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandLiveChildCell.swift; sourceTree = "<group>"; };
+		28DD1C6323A61B1E0053341F /* ReplicatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
+		28DD1C6623A624A50053341F /* HRecomdForYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdForYouCell.swift; sourceTree = "<group>"; };
+		28DD1C6823A624C40053341F /* HRecomdForYouChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdForYouChildCell.swift; sourceTree = "<group>"; };
+		28DD1C6B23A6259D0053341F /* HLaztAdviserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLaztAdviserCell.swift; sourceTree = "<group>"; };
+		28DD1C6D23A625B30053341F /* HLaztAdviserChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLaztAdviserChildCell.swift; sourceTree = "<group>"; };
+		28DD1C7023A6268F0053341F /* HAdviserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAdviserCell.swift; sourceTree = "<group>"; };
+		28DD1C7323A626F30053341F /* HHotAudioBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHotAudioBookCell.swift; sourceTree = "<group>"; };
+		28DD1C7523A627070053341F /* HHotAudioBookChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHotAudioBookChildCell.swift; sourceTree = "<group>"; };
+		28DD1C7A23A6292E0053341F /* HSquardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSquardCell.swift; sourceTree = "<group>"; };
+		28DD1C7C23A629B70053341F /* HRecomdFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdFooterView.swift; sourceTree = "<group>"; };
+		28DD1C7E23A629D20053341F /* HRecomdHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdHeaderView.swift; sourceTree = "<group>"; };
+		28DD1C8023A62AC50053341F /* HRecomdHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdHeaderCell.swift; sourceTree = "<group>"; };
 		28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseContentView.swift; sourceTree = "<group>"; };
 		779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessYouLikeViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +140,7 @@
 		280123E622DF021E00551B35 /* ReplicatorLayer */ = {
 			isa = PBXGroup;
 			children = (
-				280123E722DF021E00551B35 /* ReplicatorLayer.swift */,
+				28DD1C6323A61B1E0053341F /* ReplicatorLayer.swift */,
 			);
 			path = ReplicatorLayer;
 			sourceTree = "<group>";
@@ -166,11 +192,11 @@
 		280123FF22DF286700551B35 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
-				BA6733C423687747008163EA /* viewcontroller */,
-				BA6733C523687748008163EA /* views */,
+				BA6733C423687747008163EA /* Viewcontroller */,
+				BA6733C523687748008163EA /* Views */,
 				28CFF36222E01558000BBEE2 /* Api */,
 				28CFF36022E01557000BBEE2 /* Model */,
-				28CFF36322E01558000BBEE2 /* viewModel */,
+				28CFF36322E01558000BBEE2 /* ViewModel */,
 				2801240822DF291D00551B35 /* HHomeRecommendVC.swift */,
 			);
 			path = "推荐";
@@ -326,12 +352,81 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		28CFF36322E01558000BBEE2 /* viewModel */ = {
+		28CFF36322E01558000BBEE2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				28CFF36B22E01654000BBEE2 /* HHomeRecommongViewModel.swift */,
 			);
-			path = viewModel;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		28DD1C5E23A6096A0053341F /* RecomdLive */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C5F23A609B20053341F /* HomeRecomLiveCell.swift */,
+				28DD1C6123A60CF10053341F /* RecommandLiveChildCell.swift */,
+			);
+			path = RecomdLive;
+			sourceTree = "<group>";
+		};
+		28DD1C6523A6245E0053341F /* RecomdForYou */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C6623A624A50053341F /* HRecomdForYouCell.swift */,
+				28DD1C6823A624C40053341F /* HRecomdForYouChildCell.swift */,
+			);
+			path = RecomdForYou;
+			sourceTree = "<group>";
+		};
+		28DD1C6A23A625580053341F /* LazyAdvser */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C6B23A6259D0053341F /* HLaztAdviserCell.swift */,
+				28DD1C6D23A625B30053341F /* HLaztAdviserChildCell.swift */,
+			);
+			path = LazyAdvser;
+			sourceTree = "<group>";
+		};
+		28DD1C6F23A6265B0053341F /* Adviser */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C7023A6268F0053341F /* HAdviserCell.swift */,
+			);
+			path = Adviser;
+			sourceTree = "<group>";
+		};
+		28DD1C7223A626C20053341F /* HotAudioBook */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C7323A626F30053341F /* HHotAudioBookCell.swift */,
+				28DD1C7523A627070053341F /* HHotAudioBookChildCell.swift */,
+			);
+			path = HotAudioBook;
+			sourceTree = "<group>";
+		};
+		28DD1C7723A628CF0053341F /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C8023A62AC50053341F /* HRecomdHeaderCell.swift */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		28DD1C7823A628DA0053341F /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C7C23A629B70053341F /* HRecomdFooterView.swift */,
+				28DD1C7E23A629D20053341F /* HRecomdHeaderView.swift */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		28DD1C7923A629050053341F /* SquaredView */ = {
+			isa = PBXGroup;
+			children = (
+				28DD1C7A23A6292E0053341F /* HSquardCell.swift */,
+			);
+			path = SquaredView;
 			sourceTree = "<group>";
 		};
 		28E8D15E22DDA0E900310DB8 /* views */ = {
@@ -359,39 +454,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA174F3723687C9B00607A8D /* guessyoulike */ = {
+		BA174F3723687C9B00607A8D /* Guessyoulike */ = {
 			isa = PBXGroup;
 			children = (
 				BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */,
 				BA174F3A2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift */,
 			);
-			path = guessyoulike;
+			path = Guessyoulike;
 			sourceTree = "<group>";
 		};
-		BA174F3C236B209B00607A8D /* newcells */ = {
+		BA174F3C236B209B00607A8D /* Newcells */ = {
 			isa = PBXGroup;
 			children = (
 				BA174F3D236B20C300607A8D /* HRecomNewsCollectionViewCell.swift */,
 			);
-			path = newcells;
+			path = Newcells;
 			sourceTree = "<group>";
 		};
-		BA6733C423687747008163EA /* viewcontroller */ = {
+		BA6733C423687747008163EA /* Viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
 				BA6733C623687755008163EA /* HWebViewController.swift */,
 				BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */,
 			);
-			path = viewcontroller;
+			path = Viewcontroller;
 			sourceTree = "<group>";
 		};
-		BA6733C523687748008163EA /* views */ = {
+		BA6733C523687748008163EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BA174F3C236B209B00607A8D /* newcells */,
-				BA174F3723687C9B00607A8D /* guessyoulike */,
+				28DD1C7923A629050053341F /* SquaredView */,
+				28DD1C7823A628DA0053341F /* HeaderFooter */,
+				28DD1C7723A628CF0053341F /* HeaderCell */,
+				28DD1C7223A626C20053341F /* HotAudioBook */,
+				28DD1C6F23A6265B0053341F /* Adviser */,
+				28DD1C6A23A625580053341F /* LazyAdvser */,
+				28DD1C6523A6245E0053341F /* RecomdForYou */,
+				28DD1C5E23A6096A0053341F /* RecomdLive */,
+				BA174F3C236B209B00607A8D /* Newcells */,
+				BA174F3723687C9B00607A8D /* Guessyoulike */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,27 +646,40 @@
 				2896E2CB22DC7D7D00D9A60F /* HFindViewController.swift in Sources */,
 				2896E2D322DC7DBC00D9A60F /* HPlayViewController.swift in Sources */,
 				28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */,
+				28DD1C7D23A629B70053341F /* HRecomdFooterView.swift in Sources */,
+				28DD1C6023A609B20053341F /* HomeRecomLiveCell.swift in Sources */,
 				BA174F3B2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift in Sources */,
 				2801240D22DF297C00551B35 /* HHomeVIPVC.swift in Sources */,
 				2896E2CD22DC7D8E00D9A60F /* HHomeViewController.swift in Sources */,
 				280123F822DF021E00551B35 /* WRProxy.swift in Sources */,
 				28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */,
+				28DD1C6423A61B1E0053341F /* ReplicatorLayer.swift in Sources */,
 				28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */,
 				28A3F20D22D826C8002ADD8F /* ViewController.swift in Sources */,
 				28A3F20B22D826C8002ADD8F /* AppDelegate.swift in Sources */,
 				BA6733C723687755008163EA /* HWebViewController.swift in Sources */,
 				280123F522DF021E00551B35 /* URefresh.swift in Sources */,
+				28DD1C7B23A6292E0053341F /* HSquardCell.swift in Sources */,
+				28DD1C6C23A6259D0053341F /* HLaztAdviserCell.swift in Sources */,
 				280123F922DF021E00551B35 /* WRCycleScrollView.swift in Sources */,
+				28DD1C7623A627070053341F /* HHotAudioBookChildCell.swift in Sources */,
 				28CFF36E22E03DAE000BBEE2 /* HHomeRecommondApi.swift in Sources */,
+				28DD1C7F23A629D20053341F /* HRecomdHeaderView.swift in Sources */,
 				280123E422DEFD4200551B35 /* HBaseNavigationViewController.swift in Sources */,
+				28DD1C6923A624C40053341F /* HRecomdForYouChildCell.swift in Sources */,
 				2801240B22DF295200551B35 /* HHomeLiveVC.swift in Sources */,
 				280123FD22DF0B5000551B35 /* HHeader.swift in Sources */,
 				2896E2CF22DC7DA100D9A60F /* HListenViewController.swift in Sources */,
+				28DD1C6223A60CF10053341F /* RecommandLiveChildCell.swift in Sources */,
 				280123F422DF021E00551B35 /* LBFMCustomLabel.swift in Sources */,
+				28DD1C7123A6268F0053341F /* HAdviserCell.swift in Sources */,
+				28DD1C8123A62AC50053341F /* HRecomdHeaderCell.swift in Sources */,
 				280123F622DF021E00551B35 /* WRNavigationBar.swift in Sources */,
+				28DD1C6E23A625B30053341F /* HLaztAdviserChildCell.swift in Sources */,
 				280123FA22DF021E00551B35 /* WRCycleCell.swift in Sources */,
-				280123F322DF021E00551B35 /* ReplicatorLayer.swift in Sources */,
+				28DD1C6723A624A50053341F /* HRecomdForYouCell.swift in Sources */,
 				BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */,
+				28DD1C7423A626F30053341F /* HHotAudioBookCell.swift in Sources */,
 				BA174F3E236B20C300607A8D /* HRecomNewsCollectionViewCell.swift in Sources */,
 				2896E2C922DC7D5E00D9A60F /* HBaseViewController.swift in Sources */,
 				2801240922DF291D00551B35 /* HHomeRecommendVC.swift in Sources */,

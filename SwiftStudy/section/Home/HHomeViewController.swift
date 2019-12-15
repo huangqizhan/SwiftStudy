@@ -9,25 +9,9 @@
 import UIKit
 import DNSPageView
 
-class SwiftCla {
-    var na : String?
-    var ag : Int?
-    func action1() {
-    }
-    func action2(){
-    }
-}
-
 
 class HHomeViewController: HBaseViewController {
-    
-    var vcName : String?
-    var vaTime : Int?
-    
-    func vcAction1(){
-    }
-    func vaAction2(){
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupPageStyle()

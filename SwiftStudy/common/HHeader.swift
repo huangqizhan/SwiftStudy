@@ -13,6 +13,8 @@ import SnapKit
 import SwiftyJSON
 import HandyJSON
 import SwiftMessages
+import FSPagerView
+
 
 
 
