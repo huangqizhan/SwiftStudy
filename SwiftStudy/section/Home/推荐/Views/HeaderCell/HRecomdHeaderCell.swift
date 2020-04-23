@@ -14,7 +14,7 @@ protocol HRecomdHeaderCellDelegate : NSObjectProtocol {
     func recommendHeaderBannerClick(url:String)
 }
 
-class HRecomdHeaderCell: UICollectionReusableView {
+class HRecomdHeaderCell: UICollectionViewCell {
     private var HSquardCellId = "HSquardCellId"
     private var HRecomNewsCollectionViewCellId = "HRecomNewsCollectionViewCelld"
     
@@ -73,6 +73,31 @@ class HRecomdHeaderCell: UICollectionReusableView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    var focusModel : HFocusModel?{
+        didSet{
+            guard let model = focusModel else { return }
+            self.focuc = model
+            self.pageView.reloadData()
+        }
+    }
+    
+    var squarList : [HSquareModel]?{
+        didSet{
+            guard let list = squarList else { return }
+            self.squarList = list
+            self.collectionView.reloadData()
+        }
+    }
+    
+    var topBuzzListData : [HTopBuzzModel]?{
+        didSet{
+            guard let list = topBuzzListData else{return}
+            self.topBuzzList = list
+            self.collectionView.reloadData()
+        }
+    }
+    
 }
 
 

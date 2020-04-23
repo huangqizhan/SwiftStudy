@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+/// block
 typealias LBFMHeaderMoreBtnClick = ()-> Void
 
 class HRecomdHeaderView: UICollectionReusableView {
@@ -44,6 +46,8 @@ class HRecomdHeaderView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupHeaderView()
+
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
