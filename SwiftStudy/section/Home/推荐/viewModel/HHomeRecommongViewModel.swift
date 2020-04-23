@@ -100,12 +100,12 @@ extension HHomeRecommondViewModel{
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
     }
     /// item 间距
-    func minmumInterItemSpacingForSectionAt(section : Int) -> Int {
+    func minmumInterItemSpacingForSectionAt(section : Int) -> CGFloat {
         return 0;
     }
     
     /// 行间距
-    func minMumLineSpacingForSection(section : Int) -> Float {
+    func minMumLineSpacingForSection(section : Int) -> CGFloat {
         return 0;
     }
     
