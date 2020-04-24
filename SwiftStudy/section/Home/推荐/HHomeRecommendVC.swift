@@ -117,11 +117,14 @@ extension HHomeRecommendVC : UICollectionViewDelegate,UICollectionViewDataSource
         return viewModel.numnerOfSections(collectionView: collectionView)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numOfItemsInSection(sectoin: section)
+        let num = viewModel.numOfItemsInSection(sectoin: section)
+//        NSLog("sectoin %ld num = %ld",section,num)
+        return num
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let modulType = viewModel.homeRecommendList?[indexPath.section].moduleType
+        NSLog("==== %ld",indexPath.section)
         if modulType == "focus" || modulType == "square" || modulType == "topBuzz" {
             let headerCell : HRecomdHeaderCell = (collectionView.dequeueReusableCell(withReuseIdentifier: HRecomamndHeaderCellId, for: indexPath) as! HRecomdHeaderCell)
             headerCell.focusModel = viewModel.focus
@@ -164,7 +167,6 @@ extension HHomeRecommendVC : UICollectionViewDelegate,UICollectionViewDataSource
         let modulType = viewModel.homeRecommendList?[indexPath.section].moduleType
         if kind == UICollectionView.elementKindSectionHeader {
             let headerView : HRecomdHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HRecommandHeaderViewId, for: indexPath) as! HRecomdHeaderView
-            
             return headerView;
         }else if kind == UICollectionView.elementKindSectionFooter{
             let footerView : HRecomdFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: HRecommandFooterViewId, for: indexPath) as! HRecomdFooterView
@@ -195,13 +197,14 @@ extension HHomeRecommendVC : UICollectionViewDelegate,UICollectionViewDataSource
     
     /// item size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return viewModel.sizeForItemAt(indexPath: indexPath)
+        let size = viewModel.sizeForItemAt(indexPath: indexPath)
+        return size
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return viewModel.referenceSizeForHeaderInSection(section: section)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return viewModel.referenceSizeForFooterInSection(section: section)
     }

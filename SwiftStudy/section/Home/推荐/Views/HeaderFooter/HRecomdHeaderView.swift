@@ -13,9 +13,8 @@ typealias LBFMHeaderMoreBtnClick = ()-> Void
 
 class HRecomdHeaderView: UICollectionReusableView {
     var headerMoreBtnClick : LBFMHeaderMoreBtnClick?
-
     // 标题
-    private var titleLabel:UILabel = {
+     var titleLabel:UILabel = {
        let titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 20)
         return titleLabel

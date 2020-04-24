@@ -85,7 +85,7 @@ class HRecomdHeaderCell: UICollectionViewCell {
     var squarList : [HSquareModel]?{
         didSet{
             guard let list = squarList else { return }
-            self.squarList = list
+            self.square = list
             self.collectionView.reloadData()
         }
     }

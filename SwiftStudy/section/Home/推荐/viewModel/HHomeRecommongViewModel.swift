@@ -62,7 +62,16 @@ extension HHomeRecommondViewModel {
                     
                     
                     if let squre = JSONDeserializer<HSquareModel>.deserializeModelArrayFrom(json: json["list"][1]["list"].description){
-                        self.squareList = squre as? [HSquareModel];
+                        var arr : Array = Array<HSquareModel>()
+                        for _  in 0...9 {
+                            var m : HSquareModel = HSquareModel()
+                            m.bubbleText = "123"
+                            m.url = "http://imagev2.xmcdn.com/group66/M02/9A/47/wKgMdV2lflCSlacyAA03vBl5nnM061.png!op_type=5&upload_type=album&device_type=ios&name=large&magick=png"
+                            m.coverPath = "http://imagev2.xmcdn.com/group66/M02/9A/47/wKgMdV2lflCSlacyAA03vBl5nnM061.png!op_type=5&upload_type=album&device_type=ios&name=large&magick=png"
+                            arr.append(m)
+                        }
+                        self.squareList = arr ;
+//                        self.squareList = squre as? [HSquareModel];
                     }
                     
                     if let topBuzz = JSONDeserializer<HTopBuzzModel>.deserializeModelArrayFrom(json: json["list"][2]["list"].description){
@@ -118,7 +127,7 @@ extension HHomeRecommondViewModel{
         if modualType == "focus"{
             return CGSize(width: HScreenWidth, height: 360)
         }else if modualType == "square" || modualType == "topBuzz"{
-            return CGSize(width: 0, height: 0);
+            return CGSize(width: HScreenWidth, height: 360)
         }else if modualType == "guessYouLike" || modualType == "paidCategory" || modualType == "categoriesForLong" || modualType == "cityCategory" || modualType == "live"{
             return CGSize(width: HScreenWidth, height: CGFloat(headerAndFooterHeight + 180*itemNums))
         }else if modualType == "categoriesForShort" || modualType == "playlist" || modualType == "categoriesForExplore"{
