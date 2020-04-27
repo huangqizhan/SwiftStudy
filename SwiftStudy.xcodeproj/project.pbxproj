@@ -51,6 +51,9 @@
 		28DD1C7F23A629D20053341F /* HRecomdHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C7E23A629D20053341F /* HRecomdHeaderView.swift */; };
 		28DD1C8123A62AC50053341F /* HRecomdHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD1C8023A62AC50053341F /* HRecomdHeaderCell.swift */; };
 		28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */; };
+		665840612456E0C700667AA8 /* HClassifySubMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665840602456E0C700667AA8 /* HClassifySubMenuModel.swift */; };
+		665840692456E55E00667AA8 /* HClassifySubMenuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665840682456E55E00667AA8 /* HClassifySubMenuProvider.swift */; };
+		6658406B2456ECF900667AA8 /* HClassifySubRecommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658406A2456ECF900667AA8 /* HClassifySubRecommandViewModel.swift */; };
 		BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */; };
 		BA174F3923687CC600607A8D /* HGuessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */; };
 		BA174F3B2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA174F3A2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift */; };
@@ -104,6 +107,9 @@
 		28DD1C7E23A629D20053341F /* HRecomdHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdHeaderView.swift; sourceTree = "<group>"; };
 		28DD1C8023A62AC50053341F /* HRecomdHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRecomdHeaderCell.swift; sourceTree = "<group>"; };
 		28E8D15F22DDA18B00310DB8 /* HBaseContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseContentView.swift; sourceTree = "<group>"; };
+		665840602456E0C700667AA8 /* HClassifySubMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HClassifySubMenuModel.swift; sourceTree = "<group>"; };
+		665840682456E55E00667AA8 /* HClassifySubMenuProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HClassifySubMenuProvider.swift; sourceTree = "<group>"; };
+		6658406A2456ECF900667AA8 /* HClassifySubRecommandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HClassifySubRecommandViewModel.swift; sourceTree = "<group>"; };
 		779161EE95DF248ABC8C3FD3 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA174F3523687B0100607A8D /* HGuessYouLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessYouLikeViewController.swift; sourceTree = "<group>"; };
 		BA174F3823687CC600607A8D /* HGuessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGuessCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -221,6 +227,7 @@
 		2801240222DF286700551B35 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
+				6658405F2456E06600667AA8 /* SubClasscify */,
 				2801240422DF28B200551B35 /* HHomeClassifyVC.swift */,
 			);
 			path = "分类";
@@ -446,6 +453,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6658405F2456E06600667AA8 /* SubClasscify */ = {
+			isa = PBXGroup;
+			children = (
+				665840672456E4B400667AA8 /* View */,
+				665840662456E4A800667AA8 /* Controller */,
+				665840652456E46B00667AA8 /* ViewModel */,
+				665840642456E46300667AA8 /* Api */,
+				665840632456E44700667AA8 /* Model */,
+			);
+			path = SubClasscify;
+			sourceTree = "<group>";
+		};
+		665840632456E44700667AA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				665840602456E0C700667AA8 /* HClassifySubMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		665840642456E46300667AA8 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				665840682456E55E00667AA8 /* HClassifySubMenuProvider.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		665840652456E46B00667AA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6658406A2456ECF900667AA8 /* HClassifySubRecommandViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		665840662456E4A800667AA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		665840672456E4B400667AA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9DB3EF1316DB6CC3124605F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,12 +697,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665840692456E55E00667AA8 /* HClassifySubMenuProvider.swift in Sources */,
 				BA174F3623687B0100607A8D /* HGuessYouLikeViewController.swift in Sources */,
 				2801240522DF28B200551B35 /* HHomeClassifyVC.swift in Sources */,
 				2801240722DF28D000551B35 /* HHomeBrodcastVC.swift in Sources */,
 				2896E2CB22DC7D7D00D9A60F /* HFindViewController.swift in Sources */,
 				2896E2D322DC7DBC00D9A60F /* HPlayViewController.swift in Sources */,
 				28CFF36A22E01637000BBEE2 /* HHomeRecommondModel.swift in Sources */,
+				665840612456E0C700667AA8 /* HClassifySubMenuModel.swift in Sources */,
 				28DD1C7D23A629B70053341F /* HRecomdFooterView.swift in Sources */,
 				28DD1C6023A609B20053341F /* HomeRecomLiveCell.swift in Sources */,
 				BA174F3B2369D79E00607A8D /* HRecomGuessLikeCollectionViewCell.swift in Sources */,
@@ -655,6 +714,7 @@
 				28CFF36C22E01654000BBEE2 /* HHomeRecommongViewModel.swift in Sources */,
 				28DD1C6423A61B1E0053341F /* ReplicatorLayer.swift in Sources */,
 				28E8D16022DDA18B00310DB8 /* HBaseContentView.swift in Sources */,
+				6658406B2456ECF900667AA8 /* HClassifySubRecommandViewModel.swift in Sources */,
 				28A3F20D22D826C8002ADD8F /* ViewController.swift in Sources */,
 				28A3F20B22D826C8002ADD8F /* AppDelegate.swift in Sources */,
 				BA6733C723687755008163EA /* HWebViewController.swift in Sources */,
