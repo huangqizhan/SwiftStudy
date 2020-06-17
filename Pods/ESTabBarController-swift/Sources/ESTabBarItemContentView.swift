@@ -59,7 +59,7 @@ open class ESTabBarItemContentView: UIView {
     /// 高亮时文字颜色
     open var highlightTextColor = UIColor(red: 0.0, green: 0.47843137, blue: 1.0, alpha: 1.0) {
         didSet {
-            if selected { titleLabel.textColor = highlightIconColor }
+            if selected { titleLabel.textColor = highlightTextColor }
         }
     }
     

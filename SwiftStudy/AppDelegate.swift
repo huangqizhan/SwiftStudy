@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return false
             }
         }
-        
         tabbarController.didHijackHandler = {
             tabbarController,ViewController,index in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
@@ -52,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 SwiftMessages.show(config: warningConfig, view: warningView)
             })
         }
+
         
         let home = HHomeViewController()
         let listen = HListenViewController()
